@@ -16,6 +16,11 @@ namespace DRRest.Managers
             new DRClass {id = _nextId++, artist = "Kanye West", title = "God",  duration = 4.27, publicationYear = 2021}
         };
 
+        public List<DRClass> GetAll()
+        {
+            return new List<DRClass>(Data);
+        }
+
 
 
     }

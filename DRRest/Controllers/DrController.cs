@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DRClasssLib;
+using DRRest.Managers;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,11 +14,12 @@ namespace DRRest.Controllers
     [ApiController]
     public class DrController : ControllerBase
     {
+        private readonly DrManager _manager = new DrManager();
         // GET: api/<DrController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<DRClass> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _manager.GetAll();
         }
 
         // GET api/<DrController>/5
