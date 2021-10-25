@@ -40,6 +40,7 @@ namespace DRClasssLib.Tests
 
         }
 
+        [TestMethod]
         public void TestDrClassArtist()
         {
             _drClass.Artist = "dadadad";
@@ -49,6 +50,7 @@ namespace DRClasssLib.Tests
 
         }
 
+        [TestMethod]
         public void TestDrClassDuration()
         {
             _drClass.Duration = 100;
@@ -57,6 +59,7 @@ namespace DRClasssLib.Tests
 
         }
 
+        [TestMethod]
         public void TestDrClassPublicationYear()
         {
             _drClass.PublicationYear = 1999;
