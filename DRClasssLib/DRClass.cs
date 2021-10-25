@@ -69,7 +69,7 @@ namespace DRClasssLib
             get => _publicationYear;
             set
             {
-                if (value > 1900 && value < 2021) _publicationYear = value;
+                if (value >= 1900 && value <= 2021) _publicationYear = value;
                 else throw new ArgumentOutOfRangeException("PublicationYear", value, "Illegal");
             }
         }
