@@ -21,6 +21,13 @@ namespace DRRest.Managers
             return new List<DRClass>(Data);
         }
 
+        public List<DRClass> GetByTitle(string title)
+        {
+            return Data.FindAll(d => d.Title == title);
+        }
+
+
+
 
 
     }
