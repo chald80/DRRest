@@ -24,9 +24,9 @@ namespace DRRest.Controllers
 
         // GET api/<DrController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public DRClass Get(int id)
         {
-            return "value";
+            return _manager.GetByUserId(id);
         }
 
         // POST api/<DrController>
