@@ -13,7 +13,7 @@ namespace DRRest.Managers
         private static readonly List<DRClass> Data = new List<DRClass>
         {
             new DRClass {UserId = 1, Id = _nextId++, Artist = "Duran Duran", Title = "Man eater",  Duration = 4.27, PublicationYear = 1986  },
-            new DRClass {UserId = 1, Id = _nextId++, Artist = "Kanye West", Title = "God",  Duration = 4.27, PublicationYear = 2021}
+            new DRClass {UserId = 2, Id = _nextId++, Artist = "Kanye West", Title = "God",  Duration = 4.27, PublicationYear = 2021}
             
         };
 
