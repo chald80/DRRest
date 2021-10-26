@@ -26,6 +26,11 @@ namespace DRRest.Managers
         {
             return Data.FindAll(d => d.Title == title);
         }
+        public DRClass GetById(int Id)
+        {
+            return Data.Find(d => d.Id == Id);
+        }
+
 
 
 
