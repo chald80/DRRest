@@ -16,18 +16,19 @@ namespace DRClasssLib.Tests
         [TestInitialize]
         public void SetUp()
         {
-            _drClass = new DRClass(1, "Bobob", " dadadada", 2323, 1999);
+            _drClass = new DRClass(1, "Bobob", " dadadada", 2323, 1999, userId: 1);
         }
 
         [TestMethod]
         public void TestDrClassConstructor()
         {
-            DRClass drC = new DRClass(1, "Bobob", "dadadad", 2323, 1999);
+            DRClass drC = new DRClass(1, "Bobob", "dadadad", 2323, 1999, userId: 1);
             Assert.AreEqual(1, drC.Id);
             Assert.AreEqual("Bobob", drC.Title);
             Assert.AreEqual("dadadad", drC.Artist);
             Assert.AreEqual(2323, drC.Duration);
             Assert.AreEqual(1999, drC.PublicationYear);
+            Assert.AreEqual(1, drC.UserId);
         }
 
         [TestMethod]

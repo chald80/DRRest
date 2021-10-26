@@ -14,8 +14,7 @@ namespace DRRest.Managers
         {
             new DRClass {UserId = 1, Id = _nextId++, Artist = "Duran Duran", Title = "Man eater",  Duration = 4.27, PublicationYear = 1986  },
             new DRClass {UserId = 1, Id = _nextId++, Artist = "Kanye West", Title = "God",  Duration = 4.27, PublicationYear = 2021}
-            new DRClass {Id = _nextId++, Artist = "Duran Duran", Title = "Man eater",  Duration = 4.27, PublicationYear = 1986  },
-            new DRClass {Id = _nextId++, Artist = "Kanye West", Title = "God",  Duration = 4.27, PublicationYear = 2021}
+            
         };
 
         public List<DRClass> GetAll()
