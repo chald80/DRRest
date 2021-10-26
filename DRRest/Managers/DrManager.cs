@@ -32,6 +32,10 @@ namespace DRRest.Managers
         }
 
 
+        public DRClass GetByUserId(int id)
+        {
+            return Data.Find(d => d.UserId == id);
+        }
 
 
 
