@@ -12,14 +12,31 @@ namespace DRRest.Managers
 
         private static readonly List<DRClass> Data = new List<DRClass>
         {
-            new DRClass {id = _nextId++, artist = "Duran Duran", title = "Man eater",  duration = 4.27, publicationYear = 1986  },
-            new DRClass {id = _nextId++, artist = "Kanye West", title = "God",  duration = 4.27, publicationYear = 2021}
+            new DRClass {UserId = 1, Id = _nextId++, Artist = "Duran Duran", Title = "Man eater",  Duration = 4.27, PublicationYear = 1986  },
+            new DRClass {UserId = 2, Id = _nextId++, Artist = "Kanye West", Title = "God",  Duration = 4.27, PublicationYear = 2021}
+            
         };
 
         public List<DRClass> GetAll()
         {
             return new List<DRClass>(Data);
         }
+
+        public List<DRClass> GetByTitle(string title)
+        {
+            return Data.FindAll(d => d.Title == title);
+        }
+        public DRClass GetById(int Id)
+        {
+            return Data.Find(d => d.Id == Id);
+        }
+
+
+        public DRClass GetByUserId(int id)
+        {
+            return Data.Find(d => d.UserId == id);
+        }
+
 
 
 

@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRRest", "DRRest\DRRest.csproj", "{59864626-61BD-4D46-8645-F123885DF3E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRClasssLib", "DRClasssLib\DRClasssLib.csproj", "{EFDA0057-01CB-44A3-91FD-8318128FE4AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRClasssLib", "DRClasssLib\DRClasssLib.csproj", "{EFDA0057-01CB-44A3-91FD-8318128FE4AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRClasssLibTests2", "DRClasssLibTests2\DRClasssLibTests2.csproj", "{4BB70B52-A228-46A5-B0D8-D85BFDF71570}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EFDA0057-01CB-44A3-91FD-8318128FE4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFDA0057-01CB-44A3-91FD-8318128FE4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFDA0057-01CB-44A3-91FD-8318128FE4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BB70B52-A228-46A5-B0D8-D85BFDF71570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB70B52-A228-46A5-B0D8-D85BFDF71570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB70B52-A228-46A5-B0D8-D85BFDF71570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB70B52-A228-46A5-B0D8-D85BFDF71570}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
