@@ -26,6 +26,11 @@ namespace DRRest
         public void ConfigureServices(IServiceCollection services)
         {
 
+          services.AddCors(options => options.AddPolicy("allowAll",
+          builder => builder.AllowAnyOrigin()
+          .AllowAnyMethod()
+          .AllowAnyHeader()));
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -36,6 +41,7 @@ namespace DRRest
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
