@@ -26,12 +26,13 @@ namespace DRRest
         public void ConfigureServices(IServiceCollection services)
         {
 
-          services.AddCors(options => options.AddPolicy("allowAll",
+            services.AddControllers();
+            
+            services.AddCors(options => options.AddPolicy("allowAll",
           builder => builder.AllowAnyOrigin()
           .AllowAnyMethod()
           .AllowAnyHeader()));
 
-            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DRRest", Version = "v1" });
