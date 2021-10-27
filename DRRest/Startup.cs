@@ -28,10 +28,10 @@ namespace DRRest
 
             services.AddControllers();
             
-            services.AddCors(options => options.AddPolicy("allowAll",
-          builder => builder.AllowAnyOrigin()
-          .AllowAnyMethod()
-          .AllowAnyHeader()));
+          //  services.AddCors(options => options.AddPolicy("allowAll",
+          //builder => builder.AllowAnyOrigin()
+          //.AllowAnyMethod()
+          //.AllowAnyHeader()));
 
             services.AddSwaggerGen(c =>
             {
@@ -54,7 +54,7 @@ namespace DRRest
 
             app.UseRouting();
 
-            app.UseCors("allowAll");
+            //app.UseCors("allowAll");
 
             app.UseAuthorization();
 
