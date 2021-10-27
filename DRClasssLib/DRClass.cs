@@ -4,16 +4,14 @@ namespace DRClasssLib
 {
     public class DRClass
     {
-        private int _userId;
         private int _id;
         private string _title;
         private string _artist;
         private double _duration;
         private int _publicationYear;
 
-        public DRClass(int id, string title, string artist, double duration, int publicationYear, int userId)
+        public DRClass(int id, string title, string artist, double duration, int publicationYear)
         {
-            UserId = userId;
             Id = id;
             Title = title;
             Artist = artist;
@@ -24,13 +22,6 @@ namespace DRClasssLib
         {
 
         }
-
-        public int UserId
-        {
-            get => _userId;
-            set => _userId = value;
-        }
-
 
         public int Id
         {

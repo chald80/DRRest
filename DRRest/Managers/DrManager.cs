@@ -12,8 +12,8 @@ namespace DRRest.Managers
 
         private static readonly List<DRClass> Data = new List<DRClass>
         {
-            new DRClass {UserId = 1, Id = _nextId++, Artist = "Duran Duran", Title = "Man eater",  Duration = 4.27, PublicationYear = 1986  },
-            new DRClass {UserId = 1, Id = _nextId++, Artist = "Kanye West", Title = "God",  Duration = 4.27, PublicationYear = 2021}
+            new DRClass { Id = _nextId++, Artist = "Duran Duran", Title = "Man eater",  Duration = 4.27, PublicationYear = 1986  },
+            new DRClass { Id = _nextId++, Artist = "Kanye West", Title = "God",  Duration = 4.27, PublicationYear = 2021}
             
         };
 
@@ -26,11 +26,6 @@ namespace DRRest.Managers
         {
             return Data.FindAll(d => d.Title == title);
         }
-        public DRClass GetById(int Id)
-        {
-            return Data.Find(d => d.Id == Id);
-        }
-
 
         public DRClass GetByUserId(int id)
         {
