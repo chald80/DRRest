@@ -50,7 +50,11 @@ namespace DRRest
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DRRest v1"));
             }
 
+            app.UseHttpsRedirection();
+
             app.UseRouting();
+
+            app.UseCors("allowAll");
 
             app.UseAuthorization();
 
